@@ -36,7 +36,7 @@ public class LocationController {
 	List<Location> location= locationRepository.findAll();
 	
 	System.out.println("Location"+location);
-		return ResponseEntity.ok().body(location);
+		return ResponseEntity.ok().body(location); 
 	} 
 	
 	@GetMapping("/api/{city}")
